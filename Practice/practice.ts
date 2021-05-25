@@ -141,3 +141,4 @@ for (const rectangle of allRectangles) {
     let perimetres = rectangle.perimeter()
     console.log('rectangle areaes: ',areaes, 'rectangle perimetres: ',perimetres)
 }
+///
