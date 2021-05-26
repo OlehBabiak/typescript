@@ -12,15 +12,23 @@ export class Party {
         this.HeadOfParty = HeadOfParty;
         this.PartyMembers = PartyMembers
     }
-addDeputy(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
+    addDeputy(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
+    console.log(HeadOfParty)
 
+    }
+    deleteDeputy(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
+        console.log(PartyMembers)
+
+    }
+    allBribeTakers(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
+        console.log(PartyMembers)
+
+    }
+    biggestBribeTaker(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
+        console.log(PartyMembers)
 
     }
 }
 
-let Party1 = new Party()
 
-// - додати\видалити депутата з фракції
-// - вивести всіх хабарників фракції
-// - вивести найбільшого хабарника у фрації
-//вивести фсіх депутатів фракції
+

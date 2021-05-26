@@ -17,3 +17,4 @@ export class User {
         ${this.wife.name}, she is ${this.wife.age}, I have this skils ${this.skils}: `)
     }
 }
+

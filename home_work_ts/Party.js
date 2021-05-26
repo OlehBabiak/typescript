@@ -7,7 +7,16 @@ var Party = /** @class */ (function () {
         this.HeadOfParty = HeadOfParty;
         this.PartyMembers = PartyMembers;
     }
+    Party.prototype.addDeputy = function (name, HeadOfParty, PartyMembers) {
+        console.log(HeadOfParty);
+    };
+    Party.prototype.deleteDeputy = function (name, HeadOfParty, PartyMembers) {
+        console.log(PartyMembers);
+    };
     return Party;
 }());
 exports.Party = Party;
-var partyOPZG = new Party('OPZG', 'hgjhjhg', []);
+// - додати\видалити депутата з фракції
+// - вивести всіх хабарників фракції
+// - вивести найбільшого хабарника у фрації
+//вивести фсіх депутатів фракції
