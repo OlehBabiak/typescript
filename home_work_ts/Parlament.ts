@@ -9,10 +9,16 @@ class Parlament {
         this.city=city
         this.parties =parties
     }
-    addParty(){}
-    deleteParty(){}
-    allParties(parties: Party[]){
-        console.log(parties)
+    addParty(parties: Party[]){
+         parties.push()
+        console.log('New Parl: ', parties)
+    }
+    deleteParty(parties: Party[]){
+        parties.pop()
+        console.log('New Parl: ', parties)
+    }
+    allParties(){
+
     }
     someParty(parties: Party[]){
 
@@ -31,11 +37,18 @@ let Deputy4Status = Deputy4.giveBribe(0.8, 2000, 'Andrij', 'Chereshnja')
 
 let Party1 = new Party('OPZG', Deputy1, [Deputy1, Deputy2])
 let Party2 = new Party('ZE', Deputy3, [Deputy3, Deputy4])
+let Party3 = new Party('OZ', Deputy2, [Deputy2, Deputy3])
 
-let UkraineParlament = new Parlament('Ukraine', 'Kyiv', [Party1, Party2])
+
+let UkraineParlament = new Parlament('Ukraine', 'Kyiv', [])
+
+console.log('UK p: ', UkraineParlament)
+
+UkraineParlament.addParty([Party1, Party2, Party3])
 
 
-// - додати\видалити фракцію
+
+// - додати\видалити фракцію +
 // - вивести всі фракції
 // - вивести конкретну фракцію
 //// - додати\видалити депутата з фракції

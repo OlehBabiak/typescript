@@ -7,16 +7,18 @@ var Party = /** @class */ (function () {
         this.HeadOfParty = HeadOfParty;
         this.PartyMembers = PartyMembers;
     }
-    Party.prototype.addDeputy = function (name, HeadOfParty, PartyMembers) {
-        console.log(HeadOfParty);
-    };
-    Party.prototype.deleteDeputy = function (name, HeadOfParty, PartyMembers) {
+    Party.prototype.addDeputy = function (PartyMembers) {
+        PartyMembers.push();
         console.log(PartyMembers);
+    };
+    Party.prototype.deleteDeputy = function (PartyMembers) {
+        PartyMembers.pop();
+        console.log(PartyMembers);
+    };
+    Party.prototype.allBribeTakers = function (name, HeadOfParty, PartyMembers) {
+    };
+    Party.prototype.biggestBribeTaker = function (name, HeadOfParty, PartyMembers) {
     };
     return Party;
 }());
 exports.Party = Party;
-// - додати\видалити депутата з фракції
-// - вивести всіх хабарників фракції
-// - вивести найбільшого хабарника у фрації
-//вивести фсіх депутатів фракції

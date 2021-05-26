@@ -12,20 +12,20 @@ export class Party {
         this.HeadOfParty = HeadOfParty;
         this.PartyMembers = PartyMembers
     }
-    addDeputy(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
-    console.log(HeadOfParty)
-
+    addDeputy(PartyMembers: Deputy[]){
+    PartyMembers.push()
+        console.log('NEW party: ', PartyMembers)
     }
-    deleteDeputy(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
-        console.log(PartyMembers)
-
+    deleteDeputy(PartyMembers: Deputy[]){
+        PartyMembers.pop()
+        console.log('NEW party: ', PartyMembers)
     }
     allBribeTakers(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
-        console.log(PartyMembers)
+
 
     }
     biggestBribeTaker(name: string, HeadOfParty: Deputy, PartyMembers: Deputy[]){
-        console.log(PartyMembers)
+
 
     }
 }
